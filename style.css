@@ -1,0 +1,180 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* position: absolute;
+  display: flex; */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.274);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* filter: blur(
+    rgba(138, 8, 218, 0.218),
+    rgba(237, 88, 133, 0.837),
+    rgba(255, 192, 243, 0.635)
+  ); */
+  z-index: 1000;
+}
+body {
+  background-color: white;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 20px 25px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change styles on scroll */
+nav.scrolled {
+  border: 0;
+  /* box-shadow: 0 0 3px #ffe205, 0 0 7px #ffe205, 0 0 20px #edd205; */
+
+  background: linear-gradient(
+    45deg,
+    #570bca41,
+    rgba(0, 0, 0, 0.902),
+    #c245fc39
+  ); /* Gradient colors */
+  border-radius: 0 0 30px 30px; /* Rounded bottom corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+li:hover {
+  box-shadow: 0 0 3px rgb(222, 63, 143), 0 0 7px rgb(222, 63, 143),
+    0 0 20px rgb(222, 63, 143);
+  border: 0;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+h1 {
+  font-size: 40px;
+}
+p {
+  font-size: 27px;
+  margin-top: 68px;
+}
+.image {
+  margin-left: 800px;
+  margin-top: 170px;
+
+  display: inline-block;
+  position: absolute;
+}
+/* .text-container {
+  margin-left: 70px;
+  margin-top: 150px;
+  position: relative;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-20px, -20px);
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  max-width: 400px;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+} */
+.text-container {
+  position: absolute; /* Position text container absolutely */
+  /* Adjust vertical position */
+  left: 70px;
+  /* Ensure it appears above the image */
+}
+.text-container h1:nth-child(1) {
+  position: absolute; /* Position first line absolutely */
+  margin-top: 216px; /* Position it at the top */
+  left: 0; /* Align left */
+  color: rgb(0, 0, 0); /* Light color for background effect */
+}
+
+/* .text-container h1:nth-child(2) {
+  position: relative; /* Position second line relative to the container */
+/* margin-top: -20px; /* Adjust margin for overlap */
+
+h1 {
+  font-size: 60px; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  position: relative; /* Relative positioning for overlap */
+  color: black; /* Main text color */
+  line-height: 1.06; /* Control line height for spacing */
+  margin: 0; /* Remove default margin */
+}
+.text-container h1:nth-child(2) {
+  margin-top: 290px;
+  font-weight: bold;
+  color: black;
+}
+button {
+  margin-top: 630px;
+  margin-left: 60px;
+  width: 180px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 12px; /* Rounded bottom corners */
+  box-shadow: 6px 6px 6px rgba(237, 47, 152, 0.698);
+  border: 0;
+}
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.5rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.delivered-imgs {
+  margin-left: 96px;
+  margin-right: 35px;
+}
